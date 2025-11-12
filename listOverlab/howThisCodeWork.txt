@@ -1,0 +1,22 @@
+## Step 1: Import random
+We import the random module to generate random numbers.
+
+```python
+import random
+
+Step 2: Create two lists
+
+We create two lists, each containing 9 random integers between 1 and 10.
+
+Step 3: Print the lists
+
+We print the lists so we can see their content.
+
+Step 4: Find common elements
+
+We loop through the first list and check if each element exists in the second list. If yes, we add it to the common list.
+
+Step 5: Print the common elements
+
+Finally, we print the list of common elements
+
