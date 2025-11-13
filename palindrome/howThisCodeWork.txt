@@ -1,0 +1,75 @@
+This Python program checks whether a word entered by the user is a palindrome or not.
+
+------------------------------------------------------------
+1. INPUT
+------------------------------------------------------------
+The program first asks the user to enter a word:
+    userWord = input("please enter a word to see if it is palindrome : ")
+
+Example:
+If the user types "level", then:
+    userWord = "level"
+
+------------------------------------------------------------
+2. REVERSE THE WORD
+------------------------------------------------------------
+We reverse the user's word using slicing:
+    wordInReverse = userWord[::-1]
+
+For example:
+    "level"[::-1] → "level"
+    "python"[::-1] → "nohtyp"
+
+------------------------------------------------------------
+3. LOOP CONTROL
+------------------------------------------------------------
+A variable 'doYouWantToResume' is set to True to control the while loop.
+
+The while loop keeps running until the user decides to stop.
+
+------------------------------------------------------------
+4. CHECKING PALINDROME
+------------------------------------------------------------
+Inside the loop, we compare the original and reversed word:
+    if userWord == wordInReverse:
+
+If they are the same → it's a palindrome.
+Otherwise → it's not a palindrome.
+
+Example:
+    "level" == "level"  → Palindrome
+    "hello" != "olleh" → Not palindrome
+
+------------------------------------------------------------
+5. ASK TO CONTINUE
+------------------------------------------------------------
+After each check, the program asks the user:
+    Do you want to put more word? (yes,no)
+
+- If the user types "yes" → the loop continues.
+- If the user types "no" → the program stops.
+- Any other answer prints "Please put a valid response".
+
+------------------------------------------------------------
+6. OUTPUT EXAMPLES
+------------------------------------------------------------
+Input: level
+Output:
+    your word was level and when you turn your word into reverse, it still level
+    your word is palindrome
+
+Input: hello
+Output:
+    your word was hello and when you turn your word into reverse, it isnt hello
+    your word isn't palindrome
+
+------------------------------------------------------------
+7. NOTES
+------------------------------------------------------------
+- The slicing method [::-1] is the easiest way to reverse strings in Python.
+- The loop could be improved to ask for a new word inside it, instead of only once before it starts.
+- This program is great for beginners to learn:
+    * string comparison
+    * slicing
+    * while loops
+    * user input
